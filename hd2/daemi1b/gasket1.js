@@ -19,7 +19,7 @@ window.onload = function init()
     // First, initialize the corners of our gasket with three points.
 
     var vertices = [
-        vec2( -1, -1 ),
+        vec2( -1, -1),
         vec2(  0,  1 ),
         vec2(  1, -1 )
     ];
@@ -31,6 +31,7 @@ window.onload = function init()
     var v = add( vertices[0], vertices[2] );
     var p = scale( 0.25, add( u, v ) );
 
+
     // And, add our initial point into our array of points
 
     points = [ p ];
@@ -40,7 +41,18 @@ window.onload = function init()
     // last point and a randomly chosen vertex
 
     for ( var i = 0; points.length < NumPoints; ++i ) {
-        var j = Math.floor(Math.random() * 3);
+        let dice = Math.floor(Math.random() * 20);
+
+        let j;
+        if (dice < 18) {
+            j = 0
+        } else if (dice == 18) {
+            j = 1
+        } else {
+            j = 2;
+        }
+    
+
         p = add( points[i], vertices[j] );
         p = scale( 0.5, p );
         points.push( p );
