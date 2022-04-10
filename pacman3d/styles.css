@@ -1,0 +1,36 @@
+.score {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-size: 4em;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.lives {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: rgb(163, 0, 0);
+  font-size: 4em;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.msg {
+  position: fixed;
+  bottom: 50vh;
+  right: 50vh;
+  color: rgb(41, 5, 107);
+  font-size: 4em;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.info {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  color: white;
+  font-size: 1em;
+  font-family: "Courier New", Courier, monospace;
+}
+
